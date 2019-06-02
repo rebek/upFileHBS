@@ -20,6 +20,8 @@
     "multer-gridfs-storage": ""
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-hbs": "^0.1.1",
     "nodemon": "^1.17.1"
   }
 }

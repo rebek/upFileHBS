@@ -20,7 +20,7 @@ app.set('view engine', 'hbs');
 
 
 // Mongo URI
-const mongoURI = 'mongodb+srv://*****:***-@cluster0-5zvdy.mongodb.net/mongouploads?retryWrites=true';
+const mongoURI = 'mongodb://localhost:27017/upfileDB';
 
 // Create mongo connection
 const conn = mongoose.createConnection(mongoURI);

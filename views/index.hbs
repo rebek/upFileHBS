@@ -28,21 +28,21 @@
         <input type="submit" value="Submit" class="btn btn-primary btn-block">
       </form>
       <hr>
-    {{#if files}}
+
       {{#each files}}
           <div class="card card-body mb-3">
-            {{#if file.isImage}}
-                <img src="image/{{file.filename}}" alt="">
+            {{#if file}}
+                <img src="{{this.filename}}" alt="">
 
                 {{else}}
-                    {{file.filename}}
-                <form method="POST" action="/files/{{file._id}}?_method=DELETE">
+                    {{this.filename}}
+                <form method="POST" action="/files/{{this._id}}?_method=DELETE">
                   <button class="btn btn-danger btn-block mt-4">Delete</button>
                 </form>
               </div>
           {{/if}}
       {{/each}}
-    {{/if}}
+
     </div>
   </div>
 </div>
